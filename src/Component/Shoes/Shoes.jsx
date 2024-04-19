@@ -4,7 +4,7 @@ const Shoes = () => {
     const [item, setItem] = useState([]);
     console.log(item);
     useEffect(() => {
-        fetch('http://localhost:3000/product')
+        fetch('https://panda-backend-c9y1.onrender.com/product')
             .then((res) => res.json())
             .then((data) => setItem(data))
     }, [])
